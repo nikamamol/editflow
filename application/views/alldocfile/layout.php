@@ -468,12 +468,194 @@
                                         </div>
                                     </div>
 
-                                    <!-- ZIP Installation -->
-                                    <a href="<?php echo base_url('documentation/getting-started/installation/zip'); ?>"
-                                        class="block pl-16 pr-6 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors <?php echo $active_subsection == 'zip' ? 'bg-gray-700 text-blue-400' : ''; ?>"
-                                        onclick="closeMobileSidebar()">
-                                        • ZIP
-                                    </a>
+                                    <!-- ZIP Installation Dropdown -->
+                                    <div class="mt-1">
+                                        <button
+                                            class="flex items-center justify-between w-full pl-16 pr-6 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors <?php echo $active_subsection == 'zip' ? 'bg-gray-700 text-blue-400' : ''; ?>"
+                                            onclick="toggleDropdown('zip-dropdown')">
+                                            <span>ZIP</span>
+                                            <i class="fas fa-chevron-down text-xs transition-transform duration-300 <?php echo strpos($active_subsection, 'zip') === 0 ? 'rotate-180' : ''; ?>"
+                                                id="zip-arrow"></i>
+                                        </button>
+
+                                        <div class="mt-1 <?php echo strpos($active_subsection, 'zip') === 0 ? 'block' : 'hidden'; ?>"
+                                            id="zip-dropdown">
+                                            <a href="<?php echo base_url('documentation/getting-started/installation/zip/quick-start'); ?>"
+                                                class="block pl-20 pr-6 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors <?php echo $active_subsection == 'zip-quickstart' ? 'bg-gray-700 text-blue-400' : ''; ?>"
+                                                onclick="closeMobileSidebar()">
+                                                • Quick start guide
+                                            </a>
+
+                                            <!-- Supported Integrations -->
+                                            <a href="<?php echo base_url('documentation/getting-started/installation/zip/supported-integrations'); ?>"
+                                                class="block pl-20 pr-6 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors <?php echo $active_subsection == 'zip-supported-integrations' ? 'bg-gray-700 text-blue-400' : ''; ?>"
+                                                onclick="closeMobileSidebar()">
+                                                • Supported Integrations
+                                            </a>
+
+                                            <!-- React Dropdown -->
+                                            <div class="mt-1">
+                                                <button
+                                                    class="flex items-center justify-between w-full pl-20 pr-6 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors <?php echo $active_subsection == 'zip-react' ? 'bg-gray-700 text-blue-400' : ''; ?>"
+                                                    onclick="toggleDropdown('zip-react-dropdown')">
+                                                    <span>React</span>
+                                                    <i class="fas fa-chevron-down text-xs transition-transform duration-300 <?php echo strpos($active_subsection, 'zip-react') === 0 ? 'rotate-180' : ''; ?>"
+                                                        id="zip-react-arrow"></i>
+                                                </button>
+
+                                                <div class="mt-1 <?php echo strpos($active_subsection, 'zip-react') === 0 ? 'block' : 'hidden'; ?>"
+                                                    id="zip-react-dropdown">
+                                                    <a href="<?php echo base_url('documentation/getting-started/installation/zip/react/hosting'); ?>"
+                                                        class="block pl-24 pr-6 py-1 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors <?php echo $active_subsection == 'zip-react-hosting' ? 'bg-gray-700 text-blue-400' : ''; ?>"
+                                                        onclick="closeMobileSidebar()">
+                                                        ◦ Using a .zip package with hosting
+                                                    </a>
+                                                    <a href="<?php echo base_url('documentation/getting-started/installation/zip/react/bundling'); ?>"
+                                                        class="block pl-24 pr-6 py-1 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors <?php echo $active_subsection == 'zip-react-bundling' ? 'bg-gray-700 text-blue-400' : ''; ?>"
+                                                        onclick="closeMobileSidebar()">
+                                                        ◦ Using a .zip package with bundling
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <!-- Angular Dropdown -->
+                                            <div class="mt-1">
+                                                <button
+                                                    class="flex items-center justify-between w-full pl-20 pr-6 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors <?php echo $active_subsection == 'zip-angular' ? 'bg-gray-700 text-blue-400' : ''; ?>"
+                                                    onclick="toggleDropdown('zip-angular-dropdown')">
+                                                    <span>Angular</span>
+                                                    <i class="fas fa-chevron-down text-xs transition-transform duration-300 <?php echo strpos($active_subsection, 'zip-angular') === 0 ? 'rotate-180' : ''; ?>"
+                                                        id="zip-angular-arrow"></i>
+                                                </button>
+
+                                                <div class="mt-1 <?php echo strpos($active_subsection, 'zip-angular') === 0 ? 'block' : 'hidden'; ?>"
+                                                    id="zip-angular-dropdown">
+                                                    <a href="<?php echo base_url('documentation/getting-started/installation/zip/angular/package'); ?>"
+                                                        class="block pl-24 pr-6 py-1 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors <?php echo $active_subsection == 'zip-angular-package' ? 'bg-gray-700 text-blue-400' : ''; ?>"
+                                                        onclick="closeMobileSidebar()">
+                                                        ◦ Using a .zip package
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <!-- Vue.js Dropdown -->
+                                            <div class="mt-1">
+                                                <button
+                                                    class="flex items-center justify-between w-full pl-20 pr-6 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors <?php echo $active_subsection == 'zip-vue' ? 'bg-gray-700 text-blue-400' : ''; ?>"
+                                                    onclick="toggleDropdown('zip-vue-dropdown')">
+                                                    <span>Vue.js</span>
+                                                    <i class="fas fa-chevron-down text-xs transition-transform duration-300 <?php echo strpos($active_subsection, 'zip-vue') === 0 ? 'rotate-180' : ''; ?>"
+                                                        id="zip-vue-arrow"></i>
+                                                </button>
+
+                                                <div class="mt-1 <?php echo strpos($active_subsection, 'zip-vue') === 0 ? 'block' : 'hidden'; ?>"
+                                                    id="zip-vue-dropdown">
+                                                    <a href="<?php echo base_url('documentation/getting-started/installation/zip/vue/package'); ?>"
+                                                        class="block pl-24 pr-6 py-1 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors <?php echo $active_subsection == 'zip-vue-package' ? 'bg-gray-700 text-blue-400' : ''; ?>"
+                                                        onclick="closeMobileSidebar()">
+                                                        ◦ Using a .zip package
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <!-- Blazor Dropdown -->
+                                            <div class="mt-1">
+                                                <button
+                                                    class="flex items-center justify-between w-full pl-20 pr-6 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors <?php echo $active_subsection == 'zip-blazor' ? 'bg-gray-700 text-blue-400' : ''; ?>"
+                                                    onclick="toggleDropdown('zip-blazor-dropdown')">
+                                                    <span>Blazor</span>
+                                                    <i class="fas fa-chevron-down text-xs transition-transform duration-300 <?php echo strpos($active_subsection, 'zip-blazor') === 0 ? 'rotate-180' : ''; ?>"
+                                                        id="zip-blazor-arrow"></i>
+                                                </button>
+
+                                                <div class="mt-1 <?php echo strpos($active_subsection, 'zip-blazor') === 0 ? 'block' : 'hidden'; ?>"
+                                                    id="zip-blazor-dropdown">
+                                                    <a href="<?php echo base_url('documentation/getting-started/installation/zip/blazor/package'); ?>"
+                                                        class="block pl-24 pr-6 py-1 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors <?php echo $active_subsection == 'zip-blazor-package' ? 'bg-gray-700 text-blue-400' : ''; ?>"
+                                                        onclick="closeMobileSidebar()">
+                                                        ◦ Using a .zip package
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <!-- Svelte Dropdown -->
+                                            <div class="mt-1">
+                                                <button
+                                                    class="flex items-center justify-between w-full pl-20 pr-6 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors <?php echo $active_subsection == 'zip-svelte' ? 'bg-gray-700 text-blue-400' : ''; ?>"
+                                                    onclick="toggleDropdown('zip-svelte-dropdown')">
+                                                    <span>Svelte</span>
+                                                    <i class="fas fa-chevron-down text-xs transition-transform duration-300 <?php echo strpos($active_subsection, 'zip-svelte') === 0 ? 'rotate-180' : ''; ?>"
+                                                        id="zip-svelte-arrow"></i>
+                                                </button>
+
+                                                <div class="mt-1 <?php echo strpos($active_subsection, 'zip-svelte') === 0 ? 'block' : 'hidden'; ?>"
+                                                    id="zip-svelte-dropdown">
+                                                    <a href="<?php echo base_url('documentation/getting-started/installation/zip/svelte/package'); ?>"
+                                                        class="block pl-24 pr-6 py-1 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors <?php echo $active_subsection == 'zip-svelte-package' ? 'bg-gray-700 text-blue-400' : ''; ?>"
+                                                        onclick="closeMobileSidebar()">
+                                                        ◦ Using a .zip package
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <!-- Web Component Dropdown -->
+                                            <div class="mt-1">
+                                                <button
+                                                    class="flex items-center justify-between w-full pl-20 pr-6 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors <?php echo $active_subsection == 'zip-webcomponent' ? 'bg-gray-700 text-blue-400' : ''; ?>"
+                                                    onclick="toggleDropdown('zip-webcomponent-dropdown')">
+                                                    <span>Web Component</span>
+                                                    <i class="fas fa-chevron-down text-xs transition-transform duration-300 <?php echo strpos($active_subsection, 'zip-webcomponent') === 0 ? 'rotate-180' : ''; ?>"
+                                                        id="zip-webcomponent-arrow"></i>
+                                                </button>
+
+                                                <div class="mt-1 <?php echo strpos($active_subsection, 'zip-webcomponent') === 0 ? 'block' : 'hidden'; ?>"
+                                                    id="zip-webcomponent-dropdown">
+                                                    <a href="<?php echo base_url('documentation/getting-started/installation/zip/web-component/package'); ?>"
+                                                        class="block pl-24 pr-6 py-1 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors <?php echo $active_subsection == 'zip-webcomponent-package' ? 'bg-gray-700 text-blue-400' : ''; ?>"
+                                                        onclick="closeMobileSidebar()">
+                                                        ◦ Using a .zip package
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <!-- Java Swing -->
+                                            <a href="<?php echo base_url('documentation/getting-started/installation/zip/java-swing'); ?>"
+                                                class="block pl-20 pr-6 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors <?php echo $active_subsection == 'zip-java' ? 'bg-gray-700 text-blue-400' : ''; ?>"
+                                                onclick="closeMobileSidebar()">
+                                                • Java Swing
+                                            </a>
+
+                                            <!-- Backend Integrations -->
+                                            <div class="pl-20 pr-6 py-2 text-sm text-gray-400 font-medium">
+                                                Backend Integrations
+                                            </div>
+                                            <a href="<?php echo base_url('documentation/getting-started/installation/zip/django'); ?>"
+                                                class="block pl-24 pr-6 py-1 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors <?php echo $active_subsection == 'zip-django' ? 'bg-gray-700 text-blue-400' : ''; ?>"
+                                                onclick="closeMobileSidebar()">
+                                                ◦ Django
+                                            </a>
+                                            <a href="<?php echo base_url('documentation/getting-started/installation/zip/laravel'); ?>"
+                                                class="block pl-24 pr-6 py-1 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors <?php echo $active_subsection == 'zip-laravel' ? 'bg-gray-700 text-blue-400' : ''; ?>"
+                                                onclick="closeMobileSidebar()">
+                                                ◦ Laravel
+                                            </a>
+                                            <a href="<?php echo base_url('documentation/getting-started/installation/zip/ruby-on-rails'); ?>"
+                                                class="block pl-24 pr-6 py-1 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors <?php echo $active_subsection == 'zip-rails' ? 'bg-gray-700 text-blue-400' : ''; ?>"
+                                                onclick="closeMobileSidebar()">
+                                                ◦ Ruby on Rails
+                                            </a>
+
+                                            <!-- Other Integrations -->
+                                            <div class="pl-20 pr-6 py-2 text-sm text-gray-400 font-medium">
+                                                Other Integrations
+                                            </div>
+                                            <a href="<?php echo base_url('documentation/getting-started/installation/zip/bootstrap'); ?>"
+                                                class="block pl-24 pr-6 py-1 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors <?php echo $active_subsection == 'zip-bootstrap' ? 'bg-gray-700 text-blue-400' : ''; ?>"
+                                                onclick="closeMobileSidebar()">
+                                                ◦ Bootstrap
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -510,7 +692,7 @@
                 </div>
 
                 <!-- Promotional Card in Sidebar Bottom -->
-                <div class="mt-auto p-4 border-t border-gray-700">
+                <!-- <div class="mt-auto p-4 border-t border-gray-700">
                     <div class="promo-card p-4 text-white">
                         <div class="relative z-10">
                             <div class="flex items-center mb-2">
@@ -525,7 +707,7 @@
                             </button>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </nav>
 
@@ -644,6 +826,46 @@
                             $view_file .= 'getting_started_self_hosted_java_swing';
                         } elseif ($active_subsection == 'zip') {
                             $view_file .= 'getting_started_zip';
+                        } elseif ($active_subsection == 'zip-quickstart') {
+                            $view_file .= 'getting_started_zip_quickstart';
+                        } elseif ($active_subsection == 'zip-supported-integrations') {
+                            $view_file .= 'getting_started_zip_supported_integrations';
+                        } elseif ($active_subsection == 'zip-react') {
+                            $view_file .= 'getting_started_zip_react';
+                        } elseif ($active_subsection == 'zip-react-hosting') {
+                            $view_file .= 'getting_started_zip_react_hosting';
+                        } elseif ($active_subsection == 'zip-react-bundling') {
+                            $view_file .= 'getting_started_zip_react_bundling';
+                        } elseif ($active_subsection == 'zip-angular') {
+                            $view_file .= 'getting_started_zip_angular';
+                        } elseif ($active_subsection == 'zip-angular-package') {
+                            $view_file .= 'getting_started_zip_angular_package';
+                        } elseif ($active_subsection == 'zip-vue') {
+                            $view_file .= 'getting_started_zip_vue';
+                        } elseif ($active_subsection == 'zip-vue-package') {
+                            $view_file .= 'getting_started_zip_vue_package';
+                        } elseif ($active_subsection == 'zip-blazor') {
+                            $view_file .= 'getting_started_zip_blazor';
+                        } elseif ($active_subsection == 'zip-blazor-package') {
+                            $view_file .= 'getting_started_zip_blazor_package';
+                        } elseif ($active_subsection == 'zip-svelte') {
+                            $view_file .= 'getting_started_zip_svelte';
+                        } elseif ($active_subsection == 'zip-svelte-package') {
+                            $view_file .= 'getting_started_zip_svelte_package';
+                        } elseif ($active_subsection == 'zip-webcomponent') {
+                            $view_file .= 'getting_started_zip_webcomponent';
+                        } elseif ($active_subsection == 'zip-webcomponent-package') {
+                            $view_file .= 'getting_started_zip_webcomponent_package';
+                        } elseif ($active_subsection == 'zip-java') {
+                            $view_file .= 'getting_started_zip_java';
+                        } elseif ($active_subsection == 'zip-django') {
+                            $view_file .= 'getting_started_zip_django';
+                        } elseif ($active_subsection == 'zip-laravel') {
+                            $view_file .= 'getting_started_zip_laravel';
+                        } elseif ($active_subsection == 'zip-rails') {
+                            $view_file .= 'getting_started_zip_rails';
+                        } elseif ($active_subsection == 'zip-bootstrap') {
+                            $view_file .= 'getting_started_zip_bootstrap';
                         }
                     } elseif ($active_section == 'upgrading') {
                         $view_file .= 'getting_started_upgrading';
@@ -885,6 +1107,34 @@
             <?php if (strpos($active_subsection, 'self-hosted-jquery') === 0): ?>
                 openDropdown('self-hosted-jquery-dropdown', 'self-hosted-jquery-arrow');
             <?php endif; ?>
+
+            <?php if (strpos($active_subsection, 'zip') === 0): ?>
+                openDropdown('zip-dropdown', 'zip-arrow');
+            <?php endif; ?>
+
+            <?php if (strpos($active_subsection, 'zip-react') === 0): ?>
+                openDropdown('zip-react-dropdown', 'zip-react-arrow');
+            <?php endif; ?>
+
+            <?php if (strpos($active_subsection, 'zip-angular') === 0): ?>
+                openDropdown('zip-angular-dropdown', 'zip-angular-arrow');
+            <?php endif; ?>
+
+            <?php if (strpos($active_subsection, 'zip-vue') === 0): ?>
+                openDropdown('zip-vue-dropdown', 'zip-vue-arrow');
+            <?php endif; ?>
+
+            <?php if (strpos($active_subsection, 'zip-blazor') === 0): ?>
+                openDropdown('zip-blazor-dropdown', 'zip-blazor-arrow');
+            <?php endif; ?>
+
+            <?php if (strpos($active_subsection, 'zip-svelte') === 0): ?>
+                openDropdown('zip-svelte-dropdown', 'zip-svelte-arrow');
+            <?php endif; ?>
+
+            <?php if (strpos($active_subsection, 'zip-webcomponent') === 0): ?>
+                openDropdown('zip-webcomponent-dropdown', 'zip-webcomponent-arrow');
+            <?php endif; ?>
         });
 
         // Enhanced click handler for all dropdown buttons
@@ -944,5 +1194,4 @@
         });
     </script>
 </body>
-
 </html>

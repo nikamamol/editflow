@@ -233,14 +233,13 @@ class Documentation extends CI_Controller {
     }
 
     // ZIP Installation
-    public function getting_started_zip() {
-        $data['page_title'] = 'ZIP Installation - Editflo Documentation';
-        $data['active_page'] = 'getting-started';
-        $data['active_section'] = 'installation';
-        $data['active_subsection'] = 'zip';
-        $this->load->view('alldocfile/layout', $data);
-    }
-
+  public function getting_started_zip() {
+    $data['page_title'] = 'ZIP Installation - Editflo Documentation';
+    $data['active_page'] = 'getting-started';
+    $data['active_section'] = 'installation';
+    $data['active_subsection'] = 'zip';
+    $this->load->view('alldocfile/layout', $data);
+}
     // Upgrading
     public function getting_started_upgrading() {
         $data['page_title'] = 'Upgrading Editflo - Documentation';
@@ -364,4 +363,184 @@ public function getting_started_self_hosted_java_swing() {
     $data['active_subsection'] = 'self-hosted-java-swing';
     $this->load->view('alldocfile/layout', $data);
 }
+// ZIP Installation Main
+
+
+public function getting_started_zip_quickstart() {
+    $data['page_title'] = 'ZIP Quick Start Guide - Editflo Documentation';
+    $data['active_page'] = 'getting-started';
+    $data['active_section'] = 'installation';
+    $data['active_subsection'] = 'zip-quickstart';
+    $this->load->view('alldocfile/layout', $data);
+}
+
+public function getting_started_zip_supported_integrations() {
+    $data['page_title'] = 'ZIP Supported Integrations - Editflo Documentation';
+    $data['active_page'] = 'getting-started';
+    $data['active_section'] = 'installation';
+    $data['active_subsection'] = 'zip-supported-integrations';
+    $this->load->view('alldocfile/layout', $data);
+}
+
+// ZIP React Integration
+public function getting_started_zip_react() {
+    $data['page_title'] = 'React Integration - Editflo ZIP';
+    $data['active_page'] = 'getting-started';
+    $data['active_section'] = 'installation';
+    $data['active_subsection'] = 'zip-react';
+    $this->load->view('alldocfile/layout', $data);
+}
+
+public function getting_started_zip_react_hosting() {
+    $data['page_title'] = 'React with ZIP Package (Hosting) - Editflo Documentation';
+    $data['active_page'] = 'getting-started';
+    $data['active_section'] = 'installation';
+    $data['active_subsection'] = 'zip-react-hosting';
+    $this->load->view('alldocfile/layout', $data);
+}
+
+public function getting_started_zip_react_bundling() {
+    $data['page_title'] = 'React with ZIP Package (Bundling) - Editflo Documentation';
+    $data['active_page'] = 'getting-started';
+    $data['active_section'] = 'installation';
+    $data['active_subsection'] = 'zip-react-bundling';
+    $this->load->view('alldocfile/layout', $data);
+}
+
+// ZIP Angular Integration
+public function getting_started_zip_angular() {
+    $data['page_title'] = 'Angular Integration - Editflo ZIP';
+    $data['active_page'] = 'getting-started';
+    $data['active_section'] = 'installation';
+    $data['active_subsection'] = 'zip-angular';
+    $this->load->view('alldocfile/layout', $data);
+}
+
+public function getting_started_zip_angular_package() {
+    $data['page_title'] = 'Angular with ZIP Package - Editflo Documentation';
+    $data['active_page'] = 'getting-started';
+    $data['active_section'] = 'installation';
+    $data['active_subsection'] = 'zip-angular-package';
+    $this->load->view('alldocfile/layout', $data);
+}
+
+// ZIP Vue.js Integration
+public function getting_started_zip_vue() {
+    $data['page_title'] = 'Vue.js Integration - Editflo ZIP';
+    $data['active_page'] = 'getting-started';
+    $data['active_section'] = 'installation';
+    $data['active_subsection'] = 'zip-vue';
+    $this->load->view('alldocfile/layout', $data);
+}
+
+public function getting_started_zip_vue_package() {
+    $data['page_title'] = 'Vue.js with ZIP Package - Editflo Documentation';
+    $data['active_page'] = 'getting-started';
+    $data['active_section'] = 'installation';
+    $data['active_subsection'] = 'zip-vue-package';
+    $this->load->view('alldocfile/layout', $data);
+}
+
+// ZIP Blazor Integration
+public function getting_started_zip_blazor() {
+    $data['page_title'] = 'Blazor Integration - Editflo ZIP';
+    $data['active_page'] = 'getting-started';
+    $data['active_section'] = 'installation';
+    $data['active_subsection'] = 'zip-blazor';
+    $this->load->view('alldocfile/layout', $data);
+}
+
+public function getting_started_zip_blazor_package() {
+    $data['page_title'] = 'Blazor with ZIP Package - Editflo Documentation';
+    $data['active_page'] = 'getting-started';
+    $data['active_section'] = 'installation';
+    $data['active_subsection'] = 'zip-blazor-package';
+    $this->load->view('alldocfile/layout', $data);
+}
+
+// ZIP Svelte Integration
+public function getting_started_zip_svelte() {
+    $data['page_title'] = 'Svelte Integration - Editflo ZIP';
+    $data['active_page'] = 'getting-started';
+    $data['active_section'] = 'installation';
+    $data['active_subsection'] = 'zip-svelte';
+    $this->load->view('alldocfile/layout', $data);
+}
+
+public function getting_started_zip_svelte_package() {
+    $data['page_title'] = 'Svelte with ZIP Package - Editflo Documentation';
+    $data['active_page'] = 'getting-started';
+    $data['active_section'] = 'installation';
+    $data['active_subsection'] = 'zip-svelte-package';
+    $this->load->view('alldocfile/layout', $data);
+}
+
+// ZIP Web Component Integration
+public function getting_started_zip_webcomponent() {
+    $data['page_title'] = 'Web Component Integration - Editflo ZIP';
+    $data['active_page'] = 'getting-started';
+    $data['active_section'] = 'installation';
+    $data['active_subsection'] = 'zip-webcomponent';
+    $this->load->view('alldocfile/layout', $data);
+}
+
+public function getting_started_zip_webcomponent_package() {
+    $data['page_title'] = 'Web Component with ZIP Package - Editflo Documentation';
+    $data['active_page'] = 'getting-started';
+    $data['active_section'] = 'installation';
+    $data['active_subsection'] = 'zip-webcomponent-package';
+    $this->load->view('alldocfile/layout', $data);
+}
+
+// ZIP Java Swing Integration
+public function getting_started_zip_java() {
+    $data['page_title'] = 'Java Swing Integration - Editflo ZIP';
+    $data['active_page'] = 'getting-started';
+    $data['active_section'] = 'installation';
+    $data['active_subsection'] = 'zip-java';
+    $this->load->view('alldocfile/layout', $data);
+}
+
+// ZIP Backend Integrations
+public function getting_started_zip_django() {
+    $data['page_title'] = 'Django Integration - Editflo ZIP';
+    $data['active_page'] = 'getting-started';
+    $data['active_section'] = 'installation';
+    $data['active_subsection'] = 'zip-django';
+    $this->load->view('alldocfile/layout', $data);
+}
+
+public function getting_started_zip_laravel() {
+    $data['page_title'] = 'Laravel Integration - Editflo ZIP';
+    $data['active_page'] = 'getting-started';
+    $data['active_section'] = 'installation';
+    $data['active_subsection'] = 'zip-laravel';
+    $this->load->view('alldocfile/layout', $data);
+}
+
+public function getting_started_zip_rails() {
+    $data['page_title'] = 'Ruby on Rails Integration - Editflo ZIP';
+    $data['active_page'] = 'getting-started';
+    $data['active_section'] = 'installation';
+    $data['active_subsection'] = 'zip-rails';
+    $this->load->view('alldocfile/layout', $data);
+}
+
+// ZIP Other Integrations
+public function getting_started_zip_bootstrap() {
+    $data['page_title'] = 'Bootstrap Integration - Editflo ZIP';
+    $data['active_page'] = 'getting-started';
+    $data['active_section'] = 'installation';
+    $data['active_subsection'] = 'zip-bootstrap';
+    $this->load->view('alldocfile/layout', $data);
+}
+
+public function getting_started_zip_upgrading() {
+    $data['page_title'] = 'Upgrading TinyMCE - Editflo ZIP Documentation';
+    $data['active_page'] = 'getting-started';
+    $data['active_section'] = 'installation';
+    $data['active_subsection'] = 'zip-upgrading';
+    $this->load->view('alldocfile/layout', $data);
+}
+
 }

@@ -66,6 +66,49 @@ $route['documentation/getting-started/installation/self-hosted/jquery/package-ma
 // Self-hosted Java Swing
 $route['documentation/getting-started/installation/self-hosted/java-swing'] = 'documentation/getting_started_self_hosted_java_swing';
 
+
+// ZIP Installation Routes
+$route['documentation/getting-started/installation/zip'] = 'documentation/getting_started_zip';
+$route['documentation/getting-started/installation/zip/quick-start'] = 'documentation/getting_started_zip_quickstart';
+$route['documentation/getting-started/installation/zip/supported-integrations'] = 'documentation/getting_started_zip_supported_integrations';
+
+// ZIP React Integration
+$route['documentation/getting-started/installation/zip/react'] = 'documentation/getting_started_zip_react';
+$route['documentation/getting-started/installation/zip/react/hosting'] = 'documentation/getting_started_zip_react_hosting';
+$route['documentation/getting-started/installation/zip/react/bundling'] = 'documentation/getting_started_zip_react_bundling';
+
+// ZIP Angular Integration
+$route['documentation/getting-started/installation/zip/angular'] = 'documentation/getting_started_zip_angular';
+$route['documentation/getting-started/installation/zip/angular/package'] = 'documentation/getting_started_zip_angular_package';
+
+// ZIP Vue.js Integration
+$route['documentation/getting-started/installation/zip/vue'] = 'documentation/getting_started_zip_vue';
+$route['documentation/getting-started/installation/zip/vue/package'] = 'documentation/getting_started_zip_vue_package';
+
+// ZIP Blazor Integration
+$route['documentation/getting-started/installation/zip/blazor'] = 'documentation/getting_started_zip_blazor';
+$route['documentation/getting-started/installation/zip/blazor/package'] = 'documentation/getting_started_zip_blazor_package';
+
+// ZIP Svelte Integration
+$route['documentation/getting-started/installation/zip/svelte'] = 'documentation/getting_started_zip_svelte';
+$route['documentation/getting-started/installation/zip/svelte/package'] = 'documentation/getting_started_zip_svelte_package';
+
+// ZIP Web Component Integration
+$route['documentation/getting-started/installation/zip/web-component'] = 'documentation/getting_started_zip_webcomponent';
+$route['documentation/getting-started/installation/zip/web-component/package'] = 'documentation/getting_started_zip_webcomponent_package';
+
+// ZIP Java Swing Integration
+$route['documentation/getting-started/installation/zip/java-swing'] = 'documentation/getting_started_zip_java';
+
+// ZIP Backend Integrations
+$route['documentation/getting-started/installation/zip/django'] = 'documentation/getting_started_zip_django';
+$route['documentation/getting-started/installation/zip/laravel'] = 'documentation/getting_started_zip_laravel';
+$route['documentation/getting-started/installation/zip/ruby-on-rails'] = 'documentation/getting_started_zip_rails';
+
+// ZIP Other Integrations
+$route['documentation/getting-started/installation/zip/bootstrap'] = 'documentation/getting_started_zip_bootstrap';
+$route['documentation/getting-started/installation/zip/upgrading'] = 'documentation/getting_started_zip_upgrading';
+
 // Other main sections
 $route['documentation/integration'] = 'documentation/integration';
 $route['documentation/configuration'] = 'documentation/configuration';
